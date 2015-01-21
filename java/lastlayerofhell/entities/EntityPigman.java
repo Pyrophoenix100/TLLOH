@@ -28,7 +28,6 @@ public class EntityPigman extends EntityMob
                 this.getNavigator().setEnterDoors(true);
                 this.tasks.addTask(0, new EntityAISwimming(this));
                 this.tasks.addTask(1, new EntityAIAvoidEntity(this, EntityZombie.class, 8F, 0.3F, 0.35F));
-                this.tasks.addTask(1, new EntityAIAvoidEntity(this,EntityHerobrine.class, 8F, 0.3F, 0.35F));
                 this.tasks.addTask(2, new EntityAIMoveIndoors(this));
                 this.tasks.addTask(3, new EntityAIRestrictOpenDoor(this));
                 this.tasks.addTask(4, new EntityAIOpenDoor(this, true));
@@ -36,7 +35,6 @@ public class EntityPigman extends EntityMob
                 this.tasks.addTask(9, new EntityAIWatchClosest2(this, EntityPlayer.class, 3F, 1.0F));
                 this.tasks.addTask(9, new EntityAIWatchClosest2(this, EntityVillager.class, 5F, 0.02F));
                 this.tasks.addTask(9, new EntityAIWander(this, 0.3F));
-                this.tasks.addTask(10, new EntityAIWatchClosest(this, EntityNotch.class, 8F));
             }
             {
             this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(20.0D);

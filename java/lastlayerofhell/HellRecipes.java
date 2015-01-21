@@ -9,28 +9,6 @@ public class HellRecipes
 {
 	public static void addRecipes()
 	{
-		GameRegistry.addRecipe(new ItemStack(HellMod.KKHelmet,1), new Object[]
-				{
-		        	"KKK",
-		        	"K K",
-		        	'K',HellMod.KKShard });
-		GameRegistry.addRecipe(new ItemStack(HellMod.KKChestPlate,1), new Object[]
-				{
-		        	"K K",
-		        	"KKK",
-		        	"KKK",
-		        	'K',HellMod.KKShard });
-		GameRegistry.addRecipe(new ItemStack(HellMod.KKLeggings,1), new Object[]
-				{
-		        	"KKK",
-		        	"K K",
-		        	"K K",
-		        	'K',HellMod.KKShard });
-		GameRegistry.addRecipe(new ItemStack(HellMod.KKBoots,1), new Object[]
-				{
-		        	"K K",
-		        	"K K",
-		        	'K',HellMod.KKShard });
 		GameRegistry.addRecipe(new ItemStack(HellMod.BlockCryingObsidian), new Object[]{
 
             "XXX",
@@ -54,12 +32,7 @@ public class HellRecipes
 	"RRR",
 	"RRR",
 	'R', HellMod.Ruby});
-	GameRegistry.addRecipe(new ItemStack (HellMod.BlockKK,1),new Object[]
-	{
-	"KKK",
-	"KKK",
-	"KKK",
-	'K', HellMod.KKShard});
+
 	GameRegistry.addRecipe(new ItemStack(HellMod.RubyHelmet,1),new Object[]
 	{
 	"RRR",

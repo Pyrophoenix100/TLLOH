@@ -1,5 +1,6 @@
 package lastlayerofhell.entities;
 
+import lastlayerofhell.HellMod;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.EntityAIAvoidEntity;
@@ -27,13 +28,13 @@ public class EntityGhost extends EntityMob
             public EntityGhost
 (World par1World)
             {
-                super(par1World);
+            	super(par1World);
+            	this.dropItem(HellMod.Flaresoul, 2);
                 this.getNavigator().setAvoidsWater(true);
                 this.getNavigator().tryMoveToEntityLiving(attackingPlayer,0.0d );
                 this.getNavigator().setEnterDoors(true);
                 this.tasks.addTask(0, new EntityAISwimming(this));
                 this.tasks.addTask(1, new EntityAIAvoidEntity(this, EntityZombie.class, 8F, 0.3F, 0.35F));
-                this.tasks.addTask(1, new EntityAIAvoidEntity(this, EntityHerobrine.class, 8F, 0.3F, 0.35F));
                 this.tasks.addTask(2, new EntityAIMoveIndoors(this));
                 this.tasks.addTask(3, new EntityAIRestrictOpenDoor(this));
                 this.tasks.addTask(4, new EntityAIOpenDoor(this, true)); 

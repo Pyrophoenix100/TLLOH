@@ -65,7 +65,6 @@ public class EntityZombieNew extends EntityMob
                 this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPlayer.class, 0, true));
                 this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityVillager.class, 0, false));
                 this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityPigman.class, 0, false));
-                this.targetTasks.addTask(2, new EntityAINearestAttackableTarget(this, EntityHuman.class, 0, false));
             }
             {
             	this.getEntityAttribute(SharedMonsterAttributes.maxHealth).setBaseValue(20.0D);

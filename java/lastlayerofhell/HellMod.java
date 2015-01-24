@@ -6,7 +6,7 @@ import lastlayerofhell.entities.EntityGhost;
 import lastlayerofhell.entities.EntityPigman;
 import lastlayerofhell.entities.EntityZombieNew;
 import lastlayerofhell.entities.EntityZombiePig;
-import lastlayerofhell.items.Flaresoul;
+import lastlayerofhell.foods.Flaresoul;
 import lastlayerofhell.items.Ghoulflesh;
 import lastlayerofhell.items.RottonPork;
 import lastlayerofhell.items.Ruby;

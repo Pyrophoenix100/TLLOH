@@ -26,4 +26,5 @@ entity.Snowman.name=Snowman
 entity.KillerKirby.name=KillerKirby
 entity.Quark.name=Quark
 entity.Rana.name=Rana
-item.Ghoulflesh.name=Ghoul Fleshs
+item.Ghoulflesh.name=Ghoul Flesh
+item.Flaresoul.name=Flare Soul

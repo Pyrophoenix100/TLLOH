@@ -46,6 +46,8 @@ public class HellMod {
 	public static MyCommonProxy proxy;
 	public static final String modid = "lastlayerofhell"; 
     public static Block BlockCryingObsidian;
+    public static Block IceBrick;
+    public static Block MagmaBrick;
     public static Block Beam;
     public static Block BlockRuby;
 	public static Item RubyHelmet;
@@ -121,7 +123,9 @@ public class HellMod {
 		RubyLeggings = new RubyArmor(RubyArmor, 0, 2).setUnlocalizedName("RubyLeggings");
 		RubyBoots = new RubyArmor(RubyArmor, 0, 3).setUnlocalizedName("RubyBoots");
 		BlockCryingObsidian = new BlockCryingObsidian().setBlockName("CryingObsidian"); 
-		 Beam = new Beam().setBlockName("Beam"); 
+		 Beam = new Beam().setBlockName("Beam");
+		 IceBrick = new lastlayerofhell.blocks.IceBrick();
+		 MagmaBrick = new lastlayerofhell.blocks.MagmaBrick();
 		 BlockRuby= new BlockRuby().setBlockName("RubyBlock"); 
 		 Ruby = new Ruby();
 		 Flaresoul = new Flaresoul();
@@ -161,6 +165,8 @@ public class HellMod {
 			GameRegistry.registerItem(RubyLeggings, "RubyLeggings");
 			GameRegistry.registerItem(RubyBoots, "RubyBoots");
 			GameRegistry.registerItem(Ghoulflesh, "Ghoulflesh");
+			GameRegistry.registerBlock(IceBrick, "IceBrick");
+			GameRegistry.registerBlock(MagmaBrick, "MagmaBrick");
 			GameRegistry.registerBlock(BlockCryingObsidian, modid + BlockCryingObsidian.getUnlocalizedName().substring(5)); 
 			GameRegistry.registerBlock(Beam, modid + (Beam.getUnlocalizedName().substring(5)));
 			GameRegistry.registerBlock(BlockRuby, modid + BlockRuby.getUnlocalizedName().substring(5));

@@ -9,6 +9,12 @@ public class HellRecipes
 {
 	public static void addRecipes()
 	{
+		GameRegistry.addShapelessRecipe(new ItemStack(HellMod.IceBrick), new Object[]{
+			new ItemStack(Items.water_bucket), new ItemStack(Blocks.brick_block)
+		});
+		GameRegistry.addShapelessRecipe(new ItemStack(HellMod.MagmaBrick), new Object[]{
+			new ItemStack(Items.lava_bucket), new ItemStack(Blocks.brick_block)
+		});
 		GameRegistry.addRecipe(new ItemStack(HellMod.BlockCryingObsidian), new Object[]{
 
             "XXX",

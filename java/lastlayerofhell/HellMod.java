@@ -7,7 +7,7 @@ import lastlayerofhell.entities.EntityPigman;
 import lastlayerofhell.entities.EntityZombieNew;
 import lastlayerofhell.entities.EntityZombiePig;
 import lastlayerofhell.foods.Flaresoul;
-import lastlayerofhell.items.Ghoulflesh;
+import lastlayerofhell.foods.Ghoulflesh;
 import lastlayerofhell.items.RottonPork;
 import lastlayerofhell.items.Ruby;
 import lastlayerofhell.items.RubyArmor;
@@ -39,7 +39,7 @@ import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-@Mod(modid=HellMod.modid,name = "Last Layer of Hell",version = "0.6")
+@Mod(modid=HellMod.modid,name = "The Last Layer of Hell Mod",version = "1.0")
 
 public class HellMod {
 	@SidedProxy(clientSide="lastlayerofhell.ClientProxyClass", serverSide="lastlayerofhell.MyCommonProxy")
